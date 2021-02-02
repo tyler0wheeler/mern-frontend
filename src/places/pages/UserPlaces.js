@@ -1,6 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+
 import PlaceList from '../components/PlaceList'
+
 
 const DUMMY_PLACES = [
     {
@@ -18,7 +20,7 @@ const DUMMY_PLACES = [
     },
     {
         id:'p2',
-        title: 'Empire State Build',
+        title: 'Emp State Build',
         description: 'One of the most famous buildings in the world',
         imageUrl: 'https://newyorkyimby.com/wp-content/uploads/2020/09/DSCN0762-777x1036.jpg',
         address: '20 W 34th St, New York, NY 10001',
