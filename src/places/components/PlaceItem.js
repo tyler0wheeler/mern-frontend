@@ -10,6 +10,7 @@ import LoadingSpinner from '../../shared/components/UIElements/LoadingSpinner'
 import { AuthContext } from '../../shared/context/auth-context'
 import { useHttpClient } from '../../shared/hooks/http-hook'
 
+
 const PlaceItem = props => {
     const { isLoading, error, sendRequest, clearError} = useHttpClient()
     const auth = useContext(AuthContext)
@@ -77,7 +78,7 @@ const PlaceItem = props => {
             <Card className="place-item__content">
                 {isLoading && <LoadingSpinner asOverlay/>}
                 <div className="place-item__image">
-                    <img src={`${process.env.REACT_APP_ASSET_URL}/${props.image}`} alt={props.title} />
+                    <img src={props.image} alt={props.title} />
                 </div>
                 <div className="place-item__info">
                     <h2>{props.title}</h2>
